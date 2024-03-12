@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int size;
+    cout<<"Enter the size of variables:";
+    cin>>size;
+    int a[size];
+    int ans=0;
+    cout<<"Enter the Number:";
+    for(int i=0; i<size; i++)
+    {   
+        cin>>a[i];
+    }
+    for(int i=0; i<size; i++)
+    {
+        ans=a[i]+ans;
+    }
+    cout<<"The addition of number is:"<<ans;
+}
